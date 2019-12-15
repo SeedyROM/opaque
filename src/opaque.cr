@@ -11,8 +11,5 @@ module Opaque
     dependency :logger, Logger.new(STDOUT, Logger::INFO)
   end
 
-  command = Command.new(Command::SET, 2u8)
-
-  server = Server.new()
-  server.listen()
+  set_command = CommandType.new(CommandType::SET, 2u8)
 end

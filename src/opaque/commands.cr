@@ -2,9 +2,8 @@ require "./helpers"
 
 module Opaque
   # Application commands.
-  class Command
+  class CommandType
     include Helpers
-
     enum Type : UInt8
       GET,
       SET,
@@ -18,7 +17,21 @@ module Opaque
     property type : Type
     property arity : UInt8
 
-
     def initialize(@type, @arity) end
+
+    def serialize(*args)
+      if @arity != args.size
+        raise "Function #{@type} failed for function invocation with #{args.size} arguments, expected #{@arity}"
+      end
+
+      case @type
+      when SET
+        "#{@type} " + args.join(" ")
+      end
+    end
+  end
+
+  class Command
+
   end
 end
