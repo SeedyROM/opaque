@@ -1,7 +1,7 @@
 module Opaque::Injector
   macro inject(name)
     def {{name.id}}
-      Opaque.{{name.id}}
+      Opaque::Dependencies.{{name.id}}
     end
   end
 
