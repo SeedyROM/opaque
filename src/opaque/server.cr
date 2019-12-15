@@ -29,14 +29,15 @@ module Opaque
           client.close()
           break
         end
+        logger.info("Received message: \"#{message}\"")
         client.puts(message)
       end
     end
 
     def listen
-      logger.info("🚀  Started opaque at #{@config.host}:#{@config.port}...")
+      logger.info("started opaque at #{@config.host}:#{@config.port}")
       while client = @tcp.accept?
-        handle_connection(client)
+        spawn handle_connection(client)
       end
     end
   end
