@@ -20,10 +20,5 @@ module Opaque
 
 
     def initialize(@type, @arity) end
-
-    # Spread enum Type into the namespace
-    # {% for name in Type.constants %}
-    #   {{name.id}} = Type::{{name.id}}
-    # {% end %}
   end
 end
