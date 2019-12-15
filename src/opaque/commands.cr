@@ -24,10 +24,7 @@ module Opaque
         raise "Function #{@type} failed for function invocation with #{args.size} arguments, expected #{@arity}"
       end
 
-      case @type
-      when SET
-        "#{@type} " + args.join(" ")
-      end
+      "#{@type} " + args.join(" ")
     end
   end
 
