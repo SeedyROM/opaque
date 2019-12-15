@@ -1,6 +1,7 @@
 require "./helpers"
 
 module Opaque
+  # Application commands.
   class Command
     include Helpers
 
