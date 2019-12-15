@@ -1,6 +1,11 @@
-# opaque
+# Opaque
 
-Opaque is an experimental KV Store / Message Queue written in Crystal 0.32.0
+<center>
+  <img src="./assets/facebook_cover_photo_2.png" alt="Opaque">
+  <h4>Opaque is an experimental KV Store / Message Queue written in Crystal</h4>
+  
+</center>
+
 
 ## Installation
 
