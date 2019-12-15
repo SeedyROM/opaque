@@ -1,6 +1,6 @@
 # opaque
 
-TODO: Write a description here
+Opaque is an experimental KV Store / Message Queue written in Crystal 0.32.0
 
 ## Installation
 
@@ -16,12 +16,12 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/opaque/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
+1. Fork it (<https://github.com/SeedyROM/opaque/fork>)
+2. Create your feature branch (`git checkout -b feature/my-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
+4. Push to the branch (`git push origin feature/my-feature`)
 5. Create a new Pull Request
 
 ## Contributors
 
-- [Zack Kollar](https://github.com/your-github-user) - creator and maintainer
+- [Zack Kollar](https://github.com/SeedyROM) - creator and maintainer
