@@ -1,9 +1,6 @@
 require "logger"
 
-require "./opaque/helpers"
-require "./opaque/injector"
-require "./opaque/commands"
-require "./opaque/server"
+require "./opaque/**"
 
 module Opaque
   VERSION = "0.1.0"
